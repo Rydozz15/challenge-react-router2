@@ -1,4 +1,6 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+
+import PokeProvider from "./context/PokeContext";
 
 import Home from "./views/Home";
 import PokeFinder from "./views/PokeFinder";
@@ -9,13 +11,13 @@ import './App.css'
 function App() {
   return (
     <div>
-      <BrowserRouter>
+      <PokeProvider>
         <Navbar/>
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/pokemon" element={<PokeFinder/>} />
         </Routes>
-      </BrowserRouter>
+      </PokeProvider>
     </div>
   )
 }
