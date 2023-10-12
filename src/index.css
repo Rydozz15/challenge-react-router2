@@ -3,3 +3,30 @@
   line-height: 1.5;
   font-weight: 400;
 }
+body{
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  background-color: grey;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+nav {
+  
+}
+a {
+  margin: 0 1rem;
+  text-decoration: none;
+}
+.active {
+  color: red;
+}
+.not-active {
+  color: whitesmoke;
+}
