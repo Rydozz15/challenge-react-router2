@@ -12,6 +12,9 @@ const Home = () => {
             :<section>
                 <h1>Welcome Pokemon Master</h1>
                 <img src={`${pokemon.sprites.other["official-artwork"]["front_default"]}`} alt="" />
+                {pokemon.stats.map((element:PokemonApiObject) => (
+                    <p key={element.stat.name}>{element.stat.name} : {element["base_stat"]}</p>
+                ))}
             </section>}
         </article>
     );
