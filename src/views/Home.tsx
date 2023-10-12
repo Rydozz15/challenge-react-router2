@@ -1,9 +1,20 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { PokeContext } from "../context/PokeContext";
-import { PokemonApiObject } from "../@types/poke";
+import pikachuImg from "../assets/imgs/landing.webp"
 
 const Home = () => {
-    const  {pokemon, setPokemonUrl} = useContext(PokeContext)
+    const  {pokemon} = useContext(PokeContext)
+    const [storedPokemon, setStoredPokemon] = useState("")
+    const navigate = useNavigate();
+
+    const SendPokemon = () => {
+        if(storedPokemon !== ""){
+            navigate(`/pokemon/${storedPokemon.replace(/\s/g, '')}`)}
+        else{
+            alert("Write something down, please")
+        }
+    }
 
     return(
         <article>
@@ -11,10 +22,9 @@ const Home = () => {
             ? ""
             :<section>
                 <h1>Welcome Pokemon Master</h1>
-                <img src={`${pokemon.sprites.other["official-artwork"]["front_default"]}`} alt="" />
-                {pokemon.stats.map((element:PokemonApiObject) => (
-                    <p key={element.stat.name}>{element.stat.name} : {element["base_stat"]}</p>
-                ))}
+                <img src={pikachuImg} alt="" />
+                <input type="text" id="pokemon-id" onChange={(e) => {setStoredPokemon(e.target.value)}}/>
+                <button onClick={SendPokemon}>Buscar...</button>
             </section>}
         </article>
     );
