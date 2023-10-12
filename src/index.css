@@ -73,3 +73,19 @@ section button:hover {
 }
 
 /* Character - PokeFinder section*/
+.pokefinder-main {
+  margin-top: 60px
+}
+.pokefinder-main section {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+}
+.pokefinder-main section img {
+  max-height: 400px;
+}
+.pokefinder-main section aside{
+  border: 2px solid grey;
+  padding: 0.5rem;
+  border-radius: 20%;
+}
