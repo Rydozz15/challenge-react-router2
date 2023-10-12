@@ -39,3 +39,32 @@ a {
 }
 
 /*Home section*/
+main {
+  margin-top: 65px;
+  padding: 0.5rem;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section img{
+  max-width: 50%;
+}
+section input {
+  margin: 1rem;
+  padding: 0 2rem;
+  border: 2px double grey;
+}
+section button{
+  background-color: red;
+  color: whitesmoke;
+  border: 0;
+  border-radius: 10%;
+  padding: 0.2rem 0.5rem;
+  transition: all 0.5s ease;
+}
+section button:hover {
+  transform:scale(1.1,1.1)
+}
