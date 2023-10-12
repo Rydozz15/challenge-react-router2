@@ -15,7 +15,7 @@ const PokeProvider = ({ children }:React.PropsWithChildren) => {
         axios
           .get(pokeUrl)
           .then((response) => {
-            setPokemon(response)
+            setPokemon(response.data)
           })
           .catch((err) => {
             console.log("Fetch API error:", err);
