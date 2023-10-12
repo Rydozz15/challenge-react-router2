@@ -15,8 +15,11 @@ const PokeFinder = () => {
     console.log(pokemon)
     return(
         <div>
-            {pokemon == "https://pokeapi.co/api/v2/pokemon/pikachu" 
-            ? ""
+            {pokemon.name == "pikachu" 
+            ? <section>
+                <h1>404: Pokemon not found</h1>
+                <p>Go back to Home and try another one!</p>
+            </section>
             :<section>
                 <h1 key={pokemon.name}>{pokemon.name[0].toUpperCase()+pokemon.name.substring(1)}</h1>
                 <img src={`${pokemon.sprites.other["official-artwork"]["front_default"]}`} alt="" />

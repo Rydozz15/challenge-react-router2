@@ -19,6 +19,7 @@ const PokeProvider = ({ children }:React.PropsWithChildren) => {
           })
           .catch((err) => {
             console.log("Fetch API error:", err);
+            alert("Try another name, that one doesn't exist")
           });
       };
 
