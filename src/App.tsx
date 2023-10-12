@@ -15,7 +15,7 @@ function App() {
         <Navbar/>
         <Routes>
           <Route path="/" element={<Home/>} />
-          <Route path="/pokemon" element={<PokeFinder/>} />
+          <Route path="/pokemon/:storedPokemon" element={<PokeFinder/>} />
         </Routes>
       </PokeProvider>
     </div>
