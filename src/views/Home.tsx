@@ -17,16 +17,17 @@ const Home = () => {
     }
 
     return(
-        <article>
+        <main>
             {pokemon == null 
             ? ""
             :<section>
                 <h1>Welcome Pokemon Master</h1>
-                <img src={pikachuImg} alt="" />
+                <img src={pikachuImg} alt="Pikachu as a Landing Page" />
+                <h3>Please, type in the pokemon's name that you want to search ✍️</h3>
                 <input type="text" id="pokemon-id" onChange={(e) => {setStoredPokemon(e.target.value)}}/>
                 <button onClick={SendPokemon}>Buscar...</button>
             </section>}
-        </article>
+        </main>
     );
 };
 

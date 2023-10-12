@@ -52,6 +52,9 @@ section {
 section img{
   max-width: 50%;
 }
+section h3 {
+  margin-bottom: 0;
+}
 section input {
   margin: 1rem;
   padding: 0 2rem;
