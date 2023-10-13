@@ -1,27 +1,40 @@
-# React + TypeScript + Vite
+# Challenge React Router II - Course: React II | Academia Desafio Latam.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## About the project
+It's a weekly challenge to prove the student's learning outcome through a coding exercise.
 
-Currently, two official plugins are available:
+### Objectives
+- Practice the use of useParams, useNavigate and NavLink in React applications.
+- Review the use of the hooks useEffect, useState and Context.
+- (Personal) Try to implement TypeScript in React Development.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+## Getting Started
+### Prerequisites
+- typescript
+```
+npm install typescript --save-dev
+```
+- npm
+```
+npm install npm@latest -g
+```
+### Installation
+1. Clone the repo
+```
+git clone git@github.com:Rydozz15/desafio-react-context.git
+```
+2. Install NPM packages
+```
+npm install
+```
+3. Run the App. Done!
+```
+npm run dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Usage
+It's an example of an App consuming an Api, in this case, PokeAPI. You can type your favorite pokemon, and the base stats and type will appear in a rudimentary card.
+That's it :D
+
+## Message for Desafio Latam's reviewer
+Hola Francisco, en la carpeta 'js' se encuentra la versión sin jsx para que la puedas revisar. Saludos.
